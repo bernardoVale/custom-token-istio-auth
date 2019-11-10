@@ -1,0 +1,35 @@
+apiVersion: rbac.istio.io/v1alpha1
+kind: RbacConfig
+metadata:
+  name: default
+  namespace: istio-system
+spec:
+  mode: ON_WITH_INCLUSION
+  inclusion:
+    services:
+      - httpbin-service.safe-services-ns.svc.cluster.local
+---
+apiVersion: rbac.istio.io/v1alpha1
+kind: ServiceRole
+metadata:
+  name: header-reader 
+  namespace: safe-services-ns
+spec:
+  rules:
+    - services:
+        - httpbin-service.safe-services-ns.svc.cluster.local
+      paths:
+        - '/headers'
+---
+apiVersion: rbac.istio.io/v1alpha1
+kind: ServiceRoleBinding
+metadata:
+  name: header-reader-binding
+  namespace: safe-services-ns
+spec:
+  subjects:
+    - properties:
+        request.auth.claims[role]: "header-reader"
+  roleRef:
+    kind: ServiceRole
+    name: header-reader

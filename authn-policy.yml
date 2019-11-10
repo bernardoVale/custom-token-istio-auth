@@ -1,0 +1,14 @@
+apiVersion: authentication.istio.io/v1alpha1
+kind: Policy
+metadata:
+  name: httpbin-authn-policy
+  namespace: safe-services-ns
+spec:
+  targets:
+    - name: httpbin-service
+  origins:
+    - jwt:
+        issuer: "thecloudblog.net"
+        audiences: ["app.thecloudblog.net"]
+        jwksUri: "https://raw.githubusercontent.com/rahulrai-in/custom-token-istio-auth/master/jwks.json"
+  principalBinding: USE_ORIGIN
