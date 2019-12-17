@@ -1,0 +1,11 @@
+{
+  "keys": [
+    {
+      "kty": "oct",
+      "use": "sig",
+      "kid": "22402604E6BC9318",
+      "k": "hGu5aT8B2W8upmr02TzCZnx67yBZxKlpQ3JS5jSsIyLdtMgwxOs0e6VhZsYBoiHtaGIhh2HQjm7XA1kM1tkDIdCuXrW6Rna_9qQZbGFCFIQ6O-Ellon9ElEjYexenEE2SxGHYnvvUadRPtOJ9_pEcZej8ST9ioNGqglC2-eK4CDfLzfPAJ6WtSse5bRM98OPL1uqIu8Sjti4Qt0o_7_8TavvTrl0OWlVOtBqDH-Xt-Ls-7MCJGSOIyvwSI23GvLiUnahJyTRFDHmWMvEzuBXF8mWX7JpmJozCJkKmOrlXnD7AfHuINDOMccDh8kdxHiClhtwORWip773HOzH2diDIg",
+      "alg": "HS256"
+    }
+  ]
+}
