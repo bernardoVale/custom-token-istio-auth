@@ -1,0 +1,11 @@
+{
+    "keys": [
+        {
+            "kty": "oct",
+            "use": "enc",
+            "kid": "22402604E6BC9318",
+            "k": "Bxvp16_J2KqV2LLSbnYmMsTEiBn5pIrNNSLbQPG2cGEcq65PzawWUgFKr6B6N1rBDcKUENrdIMRvU2eoIn3u6BZoChUVZYjlP6DJ5_hDqxRHZYVOvU57NEtPNdOeQX20qRIWqKBl4xTsx9RSsy9swENpnXvqtd_HT_lGZZfU5k3seS2xQjLXBVAcda6YVPSVp1bbrHMf8B8Lf6KStUqKDyFdBjt5RC6-rbAyVnc_KZXj-3ztJU8vuCKca_HgYl4TDO8jIBvFBzLOGZCbXwAre1ratwZhMIAAf2RMNp32UYXROWVS3R0dm_n-g03Ux7kZmtATAcrf7Jjr0coFeLj5iQ",
+            "alg": "HS256"
+        }
+    ]
+}
