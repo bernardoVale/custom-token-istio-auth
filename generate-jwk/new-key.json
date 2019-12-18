@@ -1,0 +1,10 @@
+{
+  "keys": [
+      {
+          "kty": "oct",
+          "use": "enc",
+          "k": "O32GDkeE7iSJp4fFMbuJEBD-8KaKlYmcQzg82e5AXYQ",
+          "alg": "HS256"
+      }
+  ]
+}
