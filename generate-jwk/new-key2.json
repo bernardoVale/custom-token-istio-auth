@@ -1,0 +1,6 @@
+{
+    "kty": "oct",
+    "kid": "b73012b5-4a89-453d-a362-dce30aa531ea",
+    "k": "jbyY10dBfR-pM_INZFsbyB2uPD8gZLlD2vwN8oNghW8",
+    "alg": "HS256"
+}
